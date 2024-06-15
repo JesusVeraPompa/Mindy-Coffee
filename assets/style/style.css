@@ -1,0 +1,93 @@
+:root {
+    --letra-blanca: white;
+    --letra-negra: black;
+    --letra-naranja: orangered;
+    --color-fondo: oldlace;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+/*<!---------------------------- header ---------------------------->*/
+header {
+    min-height: 15vh;
+}
+.cabezera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*<!------------ menu ------------>*/
+.titulo {
+    color: var(--letra-naranja);
+    font-size: 40px;
+}
+
+.menu > a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.home {
+    color: var(--letra-naranja);
+}
+
+.about,
+.menu,
+.delivery {
+    color: var(--letra-blanca);
+}
+
+/*<!------------ banner ------------>*/
+.banner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-banner {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    background-color: yellow;
+}
+.img-banner > img {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.titulo-banner {
+    position: absolute;
+}
+
+.titulo-banner > h2,
+h3 {
+    color: var(--letra-blanca);
+    text-align: center;
+    font-size: 30px;
+}
+
+/*<!---------------------------- main ---------------------------->*/
+main {
+    min-height: 80vh;
+}
+
+/*<!---------------------------- footer ---------------------------->*/
+footer {
+    min-height: 5vh;
+}
