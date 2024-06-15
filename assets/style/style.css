@@ -13,12 +13,14 @@
 
 body {
     background-color: var(--color-fondo);
+    overflow-x: hidden;
 }
 
 /*<!---------------------------- header ---------------------------->*/
 header {
-    min-height: 15vh;
+    min-height: 55vh;
 }
+
 .cabezera {
     display: flex;
     flex-direction: row;
@@ -60,12 +62,14 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .img-banner {
     display: flex;
     width: 100vw;
     height: 500px;
     background-color: yellow;
 }
+
 .img-banner > img {
     width: 100vw;
     object-fit: cover;
@@ -85,9 +89,100 @@ h3 {
 /*<!---------------------------- main ---------------------------->*/
 main {
     min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.section > .cuerpo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    width: 60vw;
+}
+
+.cuerpo-section > div {
+    padding: 20px;
+    width: 400px;
+}
+
+.titulo-section {
+    font-size: 16px;
+    color: var(--letra-naranja);
+    padding: 10px;
+}
+
+.titulo-cuerpo {
+    font-size: 12px;
+    color: var(--letra-naranja);
+}
+
+.parrafo-cuerpo {
+    color: var(--letra-negra);
+}
+
+.li{
+    color: var(--letra-naranja);
+    float: left;
+}
+
+hr {
+    width: 60vw;
+    text-align: center;
+}
+
+th{
+    background-color: black;
+    color: var(--letra-blanca);
+}
+
+th,td{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+table, tr, th{
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) { background:oldlace; }
+table tr:nth-child(odd) { background:#b9b0b0; }
 
 /*<!---------------------------- footer ---------------------------->*/
 footer {
-    min-height: 5vh;
+    min-height: 10vh;
+    background-color: black;
+    
+}
+.footer{
+    color: var(--letra-blanca);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.footer>div>h3,a{
+    font-size: 14px;
+    padding: 10px;
+    color: var(--letra-blanca);
+}
+.submit{
+    background-color: var(--letra-naranja);
+    color: var(--letra-blanca);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
 }
